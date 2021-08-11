@@ -7,67 +7,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
 
-    <title>API Project 2</title>
-
+    <title>Portfolio</title>
 </head>
 
-<body class="projBody" background="./assets/background.jpg">
-    <div style="background-image:image()></div>
+<body>
     <header>
-        <div id="logo"><img src="/API-Project-2/assets/letterR.png"><strong>Ricardo Cortez</strong> </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <video src="/API-Project-2/assets/Pexels Videos 2699.mp4" muted loop autoplay></video>
+    <section class="showcase">
+        <video src="./assets/Pexels Videos 2699.mp4" muted loop autoplay></video>
 
         <div class="overlay"></div>
-    </header>
-    <section>
-        <p class="aboutMe">About Me</p>
-        <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At harum impedit nisi facilis. Quia impedit
-            itaque pariatur tempora explicabo odio excepturi iure quam maiores.</strong>
+
+        <div class="text">
+            <h2>Ricky Cortez</h2>
+            <h3>Aspiring Full Stack Web Developer</h3>
+        </div>
     </section>
-    <section id="pageContent">
+    <br>
+    <br>
+    <Section class="about">
+        <div class="aboutMe" id="about">
+
+            <H2>About Me</H2>
+            <br>
+            <p>Hi, my name is Ricky Cortez, and I am a Salesman in Person and a Tech Enthusiast at heart. Learning to
+                code had been a real eye opener for me as I dove head first into HTML, CSS, and Javascript. It has
+                opened a (BIG) door into a whole new world of creativity and I am excited to say I can't wait to never
+                stop learning! </p>
+            <br>
+            <p>I have ideas that I would like to put out there and this oppurtunity at Eleven Fifty will allow me to do
+                just that. So far CSS is what I really enjoy as it brings pages to life and I can't wait to enchance my
+                Javascript abilities to make it that much greater. I have always had a creative mind and can't wait to
+                apply it in depth and create even more amazing projects! </p>
+        </div>
+    </Section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="projects">
         <main role="main">
             <article>
-                <h2>Lorem, ipsum.</h2>
-                <p>Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, cu case ceteros cum. Novum commodo malorum vix
-                    ut. Dolores consequuntur in ius, sale electram dissentiunt quo te. Cu duo omnes invidunt, eos eu
-                    mucius fabellas. Stet facilis ius te, quando voluptatibus eos in. Ad vix mundi alterum, integre
-                    urbanitas intellegam vix in.</p>
-            </article>
-            <article>
-                <h2>Lorem, ipsum.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis temporibus incidunt quia. Fuga vero
-                    beatae sed culpa, ipsum saepe consequuntur alias nam, magnam voluptate eum doloremque excepturi
-                    reprehenderit ab illo!</p>
-            </article>
-            <article>
-                <h2>Lorem, ipsum.</h2>
-                <p>test paragraph header. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem vel
-                    soluta molestias, dolores dolor eum molestiae ea nesciunt modi voluptatibus, assumenda voluptatum
-                    rerum! Minus illum nihil alias pariatur voluptatem.</p>
-            </article>
-            <article>
-                <h2>Lorem, ipsum.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur doloribus sint. Quo minima
-                    facilis quas modi iste illum. Dolorem ad facilis ea officia, nisi molestias? Quis eveniet provident
-                    sunt!</p>
+               <h2>Projects</h2>
+               <hr>
+                <br>
+                <br>
+                <br>
+
+                <h3>Static Layout Project</h3>
+                <br>
+                <a target="_blank" href="https://rcortezonline.github.io/staticLayout/">
+                    <img src="./assets/Screenshot (11).png" alt="screenshot" id="screenshot">
+                </a>
             </article>
         </main>
         <aside>
-            <div class=''>Sidebar 1</div>
-            <div>Sidebar 2</div>
-            <div>Sidebar 3</div>
+            <div>My very First Staic layout Project was a way to get hands on experience in trying to mimic a webstite.
+                Needless to say the inexperience showed but I learned a ton along the way and had fun doing so.</div>
         </aside>
     </section>
-    <footer>
+    <hr>
+    <section class="projects">
+        <main role="main">
+            <article>
 
-    </footer>
+                <h3>Creature Assignment</h3>
+                <br>
+                <a target="_blank" href="https://codepen.io/rcortezonline/pen/QWvgRXG">
+                    <img src="./assets/creature.png" alt="screenshot" id="screenshot">
+                </a>
+            </article>
+        </main>
+        <aside>
+            <div>Crafted a "creeper" using HTML and CSS. There was plenty of tweaking involved to get every body part precisely where I wanted it. Don't worry it's harmless!</div>
+        </aside>
+    </section>
+    <hr>
+    <section class="projects">
+        <main role="main">
+            <article>
 
-
-
-
+                <h3>API Project 1</h3>
+                <br>
+                <a target="_blank" href="https://rcortezonline.github.io/API-Project-1/">
+                    <img src="./assets/apiPic.png" width="500px" alt="screenshot" id="screenshot">
+                </a>
+            </article>
+        </main>
+        <aside>
+            <div>Using the Fetch Method I was able to create a webpage that showed the existing, real-time data, on Covid cases from all around the world. Used Dom Manipulation to navigate through the API and locate specific information pertaining to each country. </div>
+        </aside>
+    </section>
     <script src="main.js">
-    <script>
+
+    </script>
 </body>
 
 </html>

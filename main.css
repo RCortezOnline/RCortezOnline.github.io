@@ -1,114 +1,132 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-header {
+
+style {
+    background-repeat: ;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: black;
-    padding: 20px 30px;
-    max-width: 940px;
-    margin: auto;
+    color: white;
+    z-index: 1000;
+    opacity: .2;
+    margin: 0;
+    padding: 0;
 }
-nav {
-    display: inline-block;
-}
-nav ul li a {
-    background:Black;
-    padding: 2px 10px;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #444;
-    border-radius: 10px;
+.navbar{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    color: papayawhip;
 }
 
-nav ul li a:hover {
-	background: black;
-}
-nav ul li {
-    display: inline-block;
-    margin: 10px;
-}
-nav ul {
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
-video{
-    margin-top: -20vh;
-    height: 900px;
-    width: 900px;
-    margin-left: -17px;
-}
-#pageContent {
-    max-width: 1000px;
-    margin: auto;
-    border: none;
-}
-main {
-	float: left;
-	width: 60%;
-}
-aside {
-	float: right;
-	width: 30%;
-}
-article {
-    border-bottom: 2px dotted #999;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-article h2 {
-    font-weight: normal;
-    margin-bottom: 12px;
-}
-footer {
-	background: #AEC6CF;
-	max-width: 1000px;
-	margin: auto;
-	clear: both;
-	text-align: right;
-}
-footer p {
-	padding: 20px;
-}
-address {
-    padding: 10px 20px 30px 10px;
-}
-aside > div {
-	margin: 10px auto;
-	background: #AEC6CF;
-	min-height: 100px;
-}
-#logo {
+
+.navbar a {
     display: inline-block;
-    vertical-align: middle;
-    font-size: 30px;
-    margin-right: 75px;
-    color: #FFF;
-}
-#logo img {
-    width: 50px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-body > section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 30px 0px;
-    border-bottom: 1px solid #999;
-    color: #333;
+    font-size: 1em;
+    background: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
 }
 
-@media screen and (max-width: 1000px) {
-	body > section {
-		padding: 30px 20px;
-	}
+.navbar a:hover {
+    letter-spacing: 3px;
 }
-@media screen and (max-width: 600px) {
-	main {
-		float: none;
-		width: 100%;
-	}
-	aside {
-		float: none;
-		width: 100%;
-	}
+.showcase {
+    position:#777;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    z-index: 1000;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: light black;
+    mix-blend-mode: overlay;
+}
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
 
 }
+
+.text p {
+    font-size: 1em;
+    margin: 200px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+section.about {
+        max-width: 1000px;
+        margin: auto;
+        padding: 30px 0px;
+        border-bottom: 2px solid black;
+        color: #333;
+}
+section.projects {
+        max-width: 1000px;
+        margin: auto;
+        padding: 30px 0px;
+        /* border-bottom: 2px solid black; */
+        color: #333;
+}
+
+aside{
+    margin: 10px auto;
+    min-height: 100px;
+}
+img.screenshot:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }

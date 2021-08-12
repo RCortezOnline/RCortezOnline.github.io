@@ -15,10 +15,9 @@
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                </ul>
+                    <li><a href="#about" class="active">About Me</a></li>
+                    <li><a href="#projects" class="active">Projects</a></li>
+                    <li><a href="#contact" class="active">Contact Me</a></li>
             </nav>
         </div>
     </header>
@@ -28,7 +27,7 @@
 
         <div class="overlay"></div>
 
-        <div class="text">
+        <div class="text" id="selfie">
             <h2>Ricky Cortez</h2>
             <h3>Aspiring Full Stack Web Developer</h3>
         </div>
@@ -37,19 +36,23 @@
     <br>
     <Section class="about">
         <div class="aboutMe" id="about">
-
             <H2>About Me</H2>
             <br>
-            <p>Hi, my name is Ricky Cortez, and I am a Salesman in Person and a Tech Enthusiast at heart. Learning to
+            <br>
+            <br>
+            <div class="selfie">
+                <img src="./assets/selfie.jpg" width="500px" alt="">
+            </div>
+            <br>
+            <p>Hi, my name is Ricky Cortez, and I am a big Tech Enthusiast and a Salesman at heart. Learning to
                 code had been a real eye opener for me as I dove head first into HTML, CSS, and Javascript. It has
-                opened a (BIG) door into a whole new world of creativity and I am excited to say I can't wait to never
+                opened a door into a whole new world of creativity and I am excited to say I can't wait to never
                 stop learning! </p>
             <br>
-            <p>I have ideas that I would like to put out there and this oppurtunity at Eleven Fifty will allow me to do
-                just that. So far CSS is what I really enjoy as it brings pages to life and I can't wait to enchance my
+            <p>I really anjoy CSS as it brings pages to life and I can't wait to enchance my
                 Javascript abilities to make it that much greater. I have always had a creative mind and can't wait to
                 apply it in depth and create even more amazing projects! </p>
-        </div>
+
     </Section>
 
     <br>
@@ -57,11 +60,10 @@
     <br>
     <br>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <main role="main">
             <article>
-               <h2>Projects</h2>
-               <hr>
+                <h2>Projects</h2>
                 <br>
                 <br>
                 <br>
@@ -91,7 +93,8 @@
             </article>
         </main>
         <aside>
-            <div>Crafted a "creeper" using HTML and CSS. There was plenty of tweaking involved to get every body part precisely where I wanted it. Don't worry it's harmless!</div>
+            <div>Crafted a "creeper" using HTML and CSS. There was plenty of tweaking involved to get every body part
+                precisely where I wanted it. Don't worry it's harmless!</div>
         </aside>
     </section>
     <hr>
@@ -107,9 +110,85 @@
             </article>
         </main>
         <aside>
-            <div>Using the Fetch Method I was able to create a webpage that showed the existing, real-time data, on Covid cases from all around the world. Used Dom Manipulation to navigate through the API and locate specific information pertaining to each country. </div>
+            <div>Using the Fetch Method I was able to create a webpage that showed the existing, real-time data, on
+                Covid cases from all around the world. Used Dom Manipulation to navigate through the API and locate
+                specific information pertaining to each country. </div>
         </aside>
     </section>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <section class="projects">
+        <main role="main">
+            <article>
+
+                <h3>API Project 2</h3>
+                <br>
+                <a target="_blank" href="https://rcortezonline.github.io/API-Project-1/">
+                    <img src="./assets/ashWed.png" width="500px" alt="screenshot" id="screenshot">
+                </a>
+            </article>
+        </main>
+        <aside>
+            <div> Retrieved Holiday information for US, Mexico, and Canada from an API. The webpage shows National
+                holidays and goes more in depth on each specific holiday.</div>
+        </aside>
+        <hr>
+    </section>
+    <section class="resume">
+        <main role="main">
+            <article>
+
+                <h3>Resume</h3>
+                <br>
+                <a target="_blank" href="https://www.linkedin.com/resume-builder/urn:li:fs_memberResume:21344746/">
+                    <img src="./assets/resume.png" width="500px" alt="screenshot" id="screenshot">
+                </a>
+            </article>
+        </main>
+        <aside>
+            <div> 2021 </div>
+        </aside>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="contact" id="contact">
+        <p>Contact Me</p>
+        <br>
+        <br>
+        <form action="https://formspree.io/f/xvodwqjg" method="POST">
+            <label for="email">Your email:</label>
+            <input type="text" name="_replyto">
+            <label for="message">Your message:</label>
+            <input type="text" id="message">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div class="footer">
+            <a target="footer" href="https://github.com/RCortezOnline">
+                <img src="./assets/GitHub-Mark.png" width="100px" alt="screenshot" id="screenshot"></a>
+        </div>
+        <div class="footer">
+            <a target="footer" href="https://www.linkedin.com/in/ricky-cortez-70301921a/">
+                <img src="./assets/LinkedIn_logo_initials.png" width="70px" alt="screenshot" id="screenshot"></a>
+        </div>
+    </footer>
     <script src="main.js">
 
     </script>
